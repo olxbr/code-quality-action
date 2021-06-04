@@ -1,2 +1,2 @@
-# run-tests-action
+# Code Quality Action
 Action to run tests.
