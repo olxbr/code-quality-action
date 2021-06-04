@@ -1,0 +1,12 @@
+name: 'Run Tests Action'
+description: 'Action to run tests with make'
+inputs:
+  command:
+    description: 'Makefile command'
+    required: true
+    default: 'test'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.command }}
