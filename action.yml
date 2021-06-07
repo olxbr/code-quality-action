@@ -1,12 +1,5 @@
-name: 'Run Tests Action'
-description: 'Action to run tests with make'
-inputs:
-  command:
-    description: 'Makefile command'
-    required: true
-    default: 'test'
+name: 'code-quality-action'
+description: 'Action to run make with: lint, test and coverage'
 runs:
   using: 'docker'
   image: 'Dockerfile'
-  args:
-    - ${{ inputs.command }}
