@@ -25,9 +25,9 @@ lint:
     flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
 
 test:
-	python -m unittest discover tests "test_*.py"
+    python -m unittest discover tests "test_*.py"
 
 coverage:
-	coverage run --source=. -m unittest discover tests "test_*.py"
+    coverage run --source=. -m unittest discover tests "test_*.py"
 ```
 
